@@ -9,7 +9,7 @@ const yearEl = document.querySelector(".footer-text span");
 const toggleNav = () => {
   nav.classList.toggle("hidden");
 
-  // Prevent screen from scrolling when menu is opened
+  // Prevent screen from scrolling
   document.body.classList.toggle("lock-screen");
 
   if (nav.classList.contains("hidden")) {
