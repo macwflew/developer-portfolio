@@ -15,7 +15,7 @@ const toggleNav = () => {
   if (nav.classList.contains("hidden")) {
     btnToggleNav.textContent = "menu";
   } else {
-    // When menu is opened after transition change text respectively
+    // When menu is openedtransition change text respectively
     setTimeout(() => {
       btnToggleNav.textContent = "close";
     }, 475);
