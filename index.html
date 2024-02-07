@@ -1,65 +1,64 @@
-<!--
-  Greetings!
-
-  This delightful template has been meticulously crafted and brought to life by mac flewelling. It is generously shared with the world, inviting you to unleash your creativity and tailor it to your heart's content.
--->
-
-<!-- For any inquiries or collaborations reach out to me at mac.w.flewelling@gmail.com -->
-
-<!--
-  Embrace the guidance inscribed within the comments below to fashion an awe-inspiring portfolio of your own.
--->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="index, follow" />
+<head>
+  <meta charset="UTF-8" />
+  <!-- Ensures proper rendering and touch zooming on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Specifies the character encoding for the HTML document -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Directs search engines to index the page and follow the links -->
+  <meta name="robots" content="index, follow" />
 
-    <!--update content attributes accordingly  -->
+  <!-- Description of the page for search engines -->
+  <meta
+          name="description"
+          content="Welcome to my portfolio website. I am a full-stack engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+  />
 
-    <meta
-      name="description"
-      content="Welcome to my portfolio website. I am a full-stack engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
-    />
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="Mac Flewelling's Portfolio">
+  <meta
+          itemprop="description"
+          content="Welcome to my portfolio website. I am a full-stack web engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+  />
+  <!-- Image for Google+ and schema.org markup -->
+  <meta itemprop="image" content="assets/images/sharing-card.png">
 
-    <!-- Google / Search Engine Tags -->
-<meta itemprop="name" content="Mac Flewelling's Portfolio">
-<meta itemprop="description" content="Welcome to my portfolio website. I am a full-stack web engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
+  <!-- Facebook Meta Tags -->
+  <!-- URL of your website -->
+  <meta property="og:url" content="https://ossportfolio.netlify.app">
+  <!-- Type of your website, e.g., website, article etc. -->
+  <meta property="og:type" content="website">
+  <!-- Title of your website for social sharing -->
+  <meta property="og:title" content="Mac Flewelling's Portfolio">
+  <!-- Description of your website for social sharing -->
+  <meta
+          property="og:description"
+          content="Welcome to my portfolio website. I am a front-end web engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations."
+  />
+  <!-- Image for social sharing -->
+  <meta property="og:image" content="assets/images/sharing-card.png">
 
-<!-- Reference screenshot of updated site's header in place of content -->
-<meta itemprop="image" content="assets/images/sharing-card.png">
 
-<!-- Facebook Meta Tags -->
-<meta property="og:url" content="https://ossportfolio.netlify.app">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mac Flewelling's Portfolio">
-<meta property="og:description" content="Welcome to my portfolio website. I am a front-end web engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
 
-<!-- Reference screenshot of updated site's header in content -->
-<meta property="og:image" content="assets/images/sharing-card.png">
-
-<!-- Twitter Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
+  <!-- Twitter Meta Tags for social sharing -->
+  <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mac Flewelling's Portfolio">
 <meta name="twitter:description" content="Welcome to my portfolio website. I am a front-end web engineer and I specialize in creating user-friendly, responsive and accessible websites. Explore my projects, open-source work and contact me for any inquiries or collaborations.">
 
-<!-- Reference screenshot of updated site's header in content -->
+
 <meta name="twitter:image" content="assets/images/sharing-card.png">
 
 
-<!-- Update favicon href attribute with image of yourself -->
+  <!-- Link to the favicon image displayed in the browser tab -->
     <link
       rel="shortcut icon"
       href="assets/images/macflewImage.png"
       type="image/png"
     />
 
-    <!-- Preloading fonts for better performance -->
 
+  <!-- Preload font for performance improvement -->
     <link
       rel="preload"
       href="assets/fonts/Mona-Sans.woff2"
@@ -67,29 +66,29 @@
       type="font/woff2"
       crossorigin
     />
-
+  <!-- Link to the main stylesheet -->
     <link rel="stylesheet" href="style.css" />
+  <!-- Link to the main JavaScript file, with defer attribute to ensure it runs after the HTML is parsed -->
     <script src="script.js" defer></script>
-
-    <!-- Your name here -->
+  <!-- Title displayed in the browser tab -->
     <title>Mac Flewelling's Software Engineer Portfolio</title>
   </head>
-
   <body>
-
+  <!-- Script to apply the saved theme from localStorage to the body -->
     <script>
       const theme = localStorage.getItem("theme") || "dark";
       document.body.classList.add(theme);
     </script>
 
     <header class="header">
-
+      <!-- Menu button container -->
       <div class="menu-btn-container">
         <div class="container">
+          <!-- Menu button for mobile navigation -->
           <button type="button" class="menu-btn">Menu</button>
         </div>
       </div>
-
+      <!-- Navigation menu, initially hidden -->
       <nav class="nav hidden">
         <ol class="nav-items">
           <li class="nav-item"><a href="#">Home</a></li>
@@ -104,16 +103,16 @@
 
       <div class="container">
         <div class="header-textbox">
-          <!-- Replace with your name and job title -->
+          <!-- name/job title -->
           <h1 class="h1">
             Mac Flewelling <br />
-            - Software Engineer
+            Software Engineer
           </h1>
 
-          <!-- Add a small introductory paragraph about yourself -->
+          <!-- Intro Paragraph  -->
           <p class="header-text">
-            I am a passionate Software Engineer and aspiring Data Analyst building robust applications and specializing in high-performance
-            Business Intelligence dashboards.
+            Dedicated Software Engineer with a strong foundation in building scalable and efficient applications.
+            Eager to contribute my technical skills and innovative solutions.
           </p>
 
           <div class="header-btns">
@@ -127,9 +126,8 @@
     <main>
       <section class="client">
         <div class="container">
-          <h2 class="h2">Trusted by</h2>
+          <h2 class="h2">Places I've Contributed</h2>
           <div class="logos">
-            <!-- Replace alt with client/company name and src attributes of images with path to relative img of client logo -->
             <div class="logo-group">
               <img
                 loading="lazy"
@@ -221,12 +219,10 @@
           <div class="work-boxes">
             <div class="work-box">
               <div class="work-textbox">
-                <!-- Add your project title here -->
                 <h3 class="h3">Endless Runner Game</h3>
-                <!-- Add small description of your project  -->
                 <p class="work-text">
                   An educational endless-runner game, featuring seamless, progressively challenging gameplay designed for continuous user engagement.                </p>
-                <!-- Add technologies you used to build the project -->
+
                 <ol class="work-technologies">
                   <li>Unity</li>
                   <li>C#</li>
@@ -234,12 +230,10 @@
                 </ol>
 
                 <div class="work-links">
-                  <!-- Add url of project in href attribute -->
                   <a href="https://github.com/macwflew/Game-Mechanics-Project" target="_blank" rel="noopener" class="link"
                     >Explore this project</a
                   >
 
-                  <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
                   <a
                     href="https://github.com/macwflew/Software-Engineering-Project"
                     target="_blank"
@@ -255,7 +249,6 @@
                 </div>
               </div>
 
-         <!-- Update img src and alt attribute  -->
 
               <picture class="work-img">
                 <img
@@ -267,9 +260,7 @@
             </div>
             <div class="work-box">
               <div class="work-textbox">
-                <!-- Add your project title here -->
                 <h3 class="h3">IEEE Web-Application</h3>
-                <!-- Add small description of your project  -->
 
                 <p class="work-text">Website for the USask IEEE Branch, developed for my
                   Software Engineering course.</p>
@@ -282,12 +273,10 @@
                   <li>TablePlus, DataGrip</li>
                 </ol>
                 <div class="work-links">
-                  <!-- Add url of project in href attribute -->
                   <a href="#" target="_blank" rel="noopener" class="link"
                     >Explore this project</a
                   >
 
-                     <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
                   <a
                     href="http://github.com/macwflew"
                     target="_blank"
@@ -302,7 +291,6 @@
                   </a>
                 </div>
               </div>
-         <!-- Update img src and alt attribute  -->
               <picture class="work-img">
                 <img
                   loading="lazy"
@@ -313,9 +301,7 @@
             </div>
             <div class="work-box">
               <div class="work-textbox">
-                <!-- Add your project title here -->
                 <h3 class="h3">Course Work and Extras</h3>
-                <!-- Add small description of your project  -->
                 <p class="work-text">
                   Checkout my GitHub for other coursework and fun projects.
                 </p>
@@ -325,12 +311,10 @@
                   <li>Social Design and Analytics</li>
                 </ol>
                 <div class="work-links">
-                  <!-- Add url of project in href attribute -->
                   <a href="#" target="_blank" rel="noopener" class="link"
                     >Check out some of my work</a
                   >
 
-                   <!-- Add link to project source code in href attribute if applicable otherwise feel free to delete or comment the markup -->
                   <a
                     href="#"
                     target="_blank"
@@ -345,7 +329,6 @@
                   </a>
                 </div>
               </div>
-         <!-- Update img src and alt attribute  -->
               <picture class="work-img">
                 <img
                   loading="lazy"
@@ -358,8 +341,6 @@
         </div>
       </section>
 
-      <!-- I write blog posts on dev.to at https://dev.to/. I have linked my articles accordingly, so please update the article title, description, and link accordingly. For example, if you write an article on Medium, link your article to Medium. Also, don't forget to update the reaction count. -->
-
       <section class="article">
         <div class="container">
           <h2 class="h2" id="blog">About Me, the Human</h2>
@@ -368,7 +349,7 @@
               <div class="article-textbox">
                 <div>
                   <h3 class="h3">
-                    Athlete and Sports Enthusiast Transitioning into the Software Development World
+                    Former Hockey Junky Pivoting into the Software World
                   </h3>
                   <p class="article-text">
                     I spent my childhood and early adult years playing hockey, building relationships,
@@ -378,11 +359,11 @@
                 </div>
                 <div class="article-info">
                   <a href="https://www.eliteprospects.com/player/208807/mac-flewelling" class="link" target="_blank" rel="noopener"
-                    >Check My Stats</a
+                    >My Hockey Career</a
                   >
                   <span class="reaction-count">
                     <img src="./assets/images/heart-outline.svg" alt="heart" />
-                    1254
+                    1263
                   </span>
                 </div>
               </div>
@@ -397,10 +378,10 @@
             <article class="article-box">
               <div class="article-textbox">
                 <div>
-                  <h3 class="h4">What I'm Learning.</h3>
+                  <h3 class="h4">What I'm Learning</h3>
                   <p class="article-text">
                     I'm currently staying upto date and trying to remain current in the
-                    areas of Software Engineering and Data Analyticsf.
+                    areas of Software Engineering and Data Analytics.
                   </p>
                 </div>
                 <div class="article-info">
@@ -422,15 +403,15 @@
               <div class="article-textbox">
                 <div>
                   <h3 class="h4">
-                    Passion Projects ✨
+                    My CodePen Journey
                   </h3>
                   <p class="article-text">
-                    These are a couple of the things I am continuing on the side
-                    to keep myself motivated and entertained. Insert Dev.to link here
-                  </p>
+                    Fresh on the CodePen scene, building my web development skills,
+                    allowing me to easily share and collaborate on
+                    interactive projects with a dynamic community of fellow developers                  </p>
                 </div>
                 <div class="article-info">
-                  <a href="https://dev.to/" class="link" target="_blank" rel="noopener"
+                  <a href="https://codepen.io/macwflew" class="link" target="_blank" rel="noopener"
                     >Continue reading</a
                   >
                   <span class="reaction-count">
@@ -447,7 +428,7 @@
             <article class="article-box">
               <div class="article-textbox">
                 <div>
-                  <h3 class="h4">About me.</h3>
+                  <h3 class="h4">Blogs</h3>
                   <div class="article-text">
                    I spent my childhood and early adult years playing hockey, building relationships,
                     learning leadership skills and mastering a craft that I have used in
@@ -455,7 +436,7 @@
                   </div>
                 </div>
                 <div class="article-info">
-                  <a href="https://dev.to/macwflew" class="link" target="_blank" rel="noopener"
+                  <a href="https://dev.to/macwflew/my-journey-as-a-software-developer-from-hockey-rinks-to-code-lines-34c6" class="link" target="_blank" rel="noopener"
                     >Continue reading</a
                   >
                   <span class="reaction-count">
@@ -486,8 +467,8 @@
                  <img src="assets/images/skills/python1.webp" alt="Python" class="skills-img" loading="lazy" title="Python">
                  <img src="assets/images/skills/php.webp" alt="PhP" class="skills-img" loading="lazy" title="PHP">
                  <img src="assets/images/skills/nosql.webp" alt="NoSql" class="skills-img" loading="lazy" title="NoSql">
-                 <img src="assets/images/skills/html.webp" alt="C#" class="skills-img" loading="lazy" title="C#">
-                 <img src="assets/images/skills/vue.webp" alt="C++" class="skills-img" loading="lazy" title="C++">
+                 <img src="assets/images/skills/c.webp" alt="C" class="skills-img" loading="lazy" title="C">
+                 <img src="assets/images/skills/vue.webp" alt="Vue" class="skills-img" loading="lazy" title="Vue">
           </div>
         </div>
       </section>
@@ -499,112 +480,113 @@
           <ol class="testimonials">
             <li class="testimonial">
               <blockquote class="testimonial-text">
-                Say nice things about me here Brianne.
+                As a coach, witnessing Mac's leadership off the ice was truly inspiring. His commitment to
+                the team's values and his ability to mentor younger players showcased maturity
+                beyond his years, making him an invaluable asset to our hockey program.
               </blockquote>
               <figure class="testimonial-author">
                 <img
-                  src="assets/images/testimonials/bri-smith.png"
+                  src="assets/images/testimonials/male.webp"
                   alt="Rich Harris"
                   loading="lazy"
                 />
                 <figcaption>
-                  <h3 class="testimonial-author-name">Brianne Smith</h3>
-                  <p class="testimonial-author-job">Dr. of Chiropractic, Chiropractic and Wellness</p>
+                  <h3 class="testimonial-author-name">Rob. M</h3>
+                  <p class="testimonial-author-job">Jr. Hockey Coach</p>
                 </figcaption>
               </figure>
             </li>
             <li class="testimonial">
               <blockquote class="testimonial-text">
-                Mac is a fantastic UI/UX designer and engineer with a keen sense for marketing,
-                and lead generation. He's the only designer I know who also has a deep understanding
-                for code and front-end development.
+                Mac was an integral part of our team, leading with integrity and a positive attitude
+                that lifted everyone's
+                spirits. His ability to unite and motivate the team made a lasting impact,
+                setting the standard for leadership in our hockey community
               </blockquote>
               <figure class="testimonial-author">
                 <img
-                  src="assets/images/testimonials/frank-mcsherry.webp"
+                  src="assets/images/testimonials/male.webp"
                   alt="Andrew Mead"
                   loading="lazy"
                 />
                 <figcaption>
                   <h3 class="testimonial-author-name">
-                    John Doe
+                    Braydon. H
                   </h3>
-                  <p class="testimonial-author-job">Chief Scientist @Logos
+                  <p class="testimonial-author-job">Jr. Hockey Teammate
                   </p>
                 </figcaption>
               </figure>
             </li>
             <li class="testimonial">
               <blockquote class="testimonial-text">
-             
-                Talented artist, experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Mac
-                again.
+                With a keen eye for design and a deep understanding of user experience,
+                Mac's contributions were instrumental in the success of our mobile application portfolio
               </blockquote>
               <figure class="testimonial-author">
                 <img
-                  src="assets/images/testimonials/brian-hirsh.png"
+                  src="assets/images/testimonials/male.webp"
                   alt="Brian Hirsh"
                   loading="lazy"
                 />
                 <figcaption>
-                  <h3 class="testimonial-author-name">John Doe</h3>
-                  <p class="testimonial-author-job">Head @Zero-in</p>
+                  <h3 class="testimonial-author-name">Sam. L</h3>
+                  <p class="testimonial-author-job">Software Team Lead, Hygge Energy</p>
                 </figcaption>
               </figure>
             </li>
             <li class="testimonial">
               <blockquote class="testimonial-text">
-                Mac is a true professional with amazing talent. He is a creative
-                thinker, has his finger on the pulse of whats to come, and
-                absolutely one of the quickest and best problem solvers I have
-                ever met.
+                Talented artist, experienced with various
+                media platforms and can make any project you are working on look good. He is
+                easy to work with and is a self starter. I would work with Mac
+                again.
+
               </blockquote>
               <figure class="testimonial-author">
                 <img
-                  src="assets/images/testimonials/adam.png"
+                  src="assets/images/testimonials/male.webp"
                   alt="Adam Argalye"
                   loading="lazy"
                 />
                 <figcaption>
-                  <h3 class="testimonial-author-name">John Doe</h3>
-                  <p class="testimonial-author-job">SWE @Google</p>
+                  <h3 class="testimonial-author-name">Harkaran. S</h3>
+                  <p class="testimonial-author-job">Software Engineer, USask</p>
                 </figcaption>
               </figure>
             </li>
             <li class="testimonial">
               <blockquote class="testimonial-text">
-               Mac is one of my favourite people to work with. He's my go-to colleague when trouble shooting any new technique or technology because she understands how to tackle unknown problems with gumption.
+                Mac's enthusiasm and commitment to excellence were evident in every task,
+                always going the extra mile to ensure our communication
+                strategies were executed flawlessly and effectively.
               </blockquote>
               <figure class="testimonial-author">
                 <img
-                  src="assets/images/testimonials/val-head.png"
+                  src="assets/images/testimonials/male.webp"
                   alt="Val Head"
                   loading="lazy"
                 />
                 <figcaption>
-                  <h3 class="testimonial-author-name">John Doe</h3>
-                  <p class="testimonial-author-job">CEO @Engines</p>
+                  <h3 class="testimonial-author-name">Tanner. C</h3>
+                  <p class="testimonial-author-job">Communications, Saskatoon Blades</p>
                 </figcaption>
               </figure>
             </li>
             <li class="testimonial">
               <blockquote class="testimonial-text">
-                Mac is a talented artist. He is very experienced with various
-                media and can make any project you are working on look good. He is
-                easy to work with and is a self starter. I would work with Mac
-                again.
+                With a profound understanding of both the technical and creative aspects of game development,
+                Mac delivered an immersive gaming environment that lead our team throughout the project.
               </blockquote>
               <figure class="testimonial-author">
                 <img
-                  src="assets/images/testimonials/tim-satterwhite.webp"
+                  src="assets/images/testimonials/male.webp"
                   alt="Gary Simon"
                   loading="lazy"
                 />
                 <figcaption>
-                  <h3 class="testimonial-author-name">John Doe</h3>
-                  <p class="testimonial-author-job">A11y Advocate @W3C</p>
+                  <h3 class="testimonial-author-name">Prateek. S</h3>
+                  <p class="testimonial-author-job">Game Development, USask
                 </figcaption>
               </figure>
             </li>
@@ -617,7 +599,6 @@
           <h2 class="h2" id="contact">Send Message</h2>
           <div class="contact-content">
             <div class="contact-textbox">
-              <!-- Please comment this component if you're not available for hire -->
               <strong href="#" class="hire-alert">
                 <span class="indicator"></span>
                 Available for hire
@@ -629,10 +610,9 @@
                 bringing ideas to life.
               </p>
               <p class="contact-text">
-                I'm also an open-source developer, and in my spare time, I do
-                graphic design and video edition on Adobe platforms.
+                I'm also a Full-Stack Developer looking to take on new challenges
+                and hoping to one day delve into the world of Data Analytics.
               </p>
-              <!-- Replace src with your signatures and name -->
               <img
                 src="assets/images/signatures.png"
                 alt="Mac Flewelling"
@@ -671,7 +651,6 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-content">
-          <!-- Update href and src attributes -->
           <nav>
             <ol class="footer-links">
               <li class="footer-link">
@@ -683,7 +662,7 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Codepen" href="https://github.com/macwflew" target="_blank" rel="noopener"
+                <a title="Codepen" href="https://codepen.io/macwflew" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/codepen.svg"
@@ -699,7 +678,7 @@
                 /></a>
               </li>
               <li class="footer-link">
-                <a title="Twitter" href="https://github.com/macwflew" target="_blank" rel="noopener"
+                <a title="Twitter" href="https://twitter.com/mwfhockeycheck" target="_blank" rel="noopener"
                   ><img
                     loading="lazy"
                     src="assets/images/social-links/twitter.svg"
@@ -719,4 +698,3 @@
       </div>
     </footer>
   </body>
-</html>
